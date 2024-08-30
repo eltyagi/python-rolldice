@@ -1,6 +1,7 @@
 # Python Rolldice
 
-A simple python flask implementation of a dice, random numbers a generated on each refresh, the data is then shared with Grafana OTLP collector.
+A simple python flask implementation of a dice, random numbers a generated on each refresh, the data is then shared with Grafana OTLP collector. This is a simple demo for OpenTelemetry with Grafana cloud.
+
 
 ## Dependencies
 ```bash
