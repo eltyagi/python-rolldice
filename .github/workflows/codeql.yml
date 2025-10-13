@@ -10,6 +10,11 @@
 # supported CodeQL languages.
 #
 name: "CodeQL Advanced"
+concurrency:
+  # Group by workflow and PR number when present, otherwise by branch ref.
+  # This ensures a new run cancels any in-progress runs for the same PR/branch.
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
 
 on:
   push:
